@@ -1,0 +1,13 @@
+training_file vector_semantic_minor_train
+testing_file vector_semantic_minor_test
+results_file semantic_minor_K3_C3
+// no parameters: none
+classifier_params -S 0 -K 3 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 3.0 -E 0.001 -P 0.1 -seed 1
+classifier SVM
+//SVM: -S 0 -K 2 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 3.0 -E 0.001 -P 0.1 -seed 1
+// kernel K =0 (linear), 1- polynomial, 2 - RBF, 3 - sigmoid
+//kNN: -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+//RandomForest: -I 100 -K 0 -S 1
+//DecisionTree: -C 0.25 -M 2
+//MultiClassClassifier: -M 0 -R 2.0 -S 1 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1
+//RBFNetwork: -B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1

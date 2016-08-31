@@ -1,0 +1,5 @@
+//number of neighbours
+k 10
+training_file mf_training
+testing_file mfcv10
+results_file mfcv10_out_uv
