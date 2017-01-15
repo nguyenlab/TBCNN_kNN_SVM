@@ -1,0 +1,15 @@
+num of epoch
+59
+mark point to write output
+59
+mode (type of output data)
+0
+num_train
+31200
+num_cv
+10400
+num_test
+10400
+output
+104
+// p1: epoch, p2: mark - export from this round, mode: 0 - export probabilities, 1- predicting results, 2-vector
