@@ -9,7 +9,7 @@ ignoreDecl = True # prune declaration branches
 reConstruct = True # rename While, DoWhile, For ==> Loop
 tokenMap ='../tokenMap.txt'
 datadir =  'D:/data/original_data/'
-targetdir = 'D:/data/prun_semantic/RvNN/network/'
+targetdir = 'D:/data/prun_semantic/TBCNN_RvNN/network/'
 #targetdir ='C:/Users/anhpv/Desktop/RNN_Networks/'
 
 margin = 1
@@ -29,7 +29,8 @@ encounterNAN = False
 # for numerical gradient checking
 
 numFea = 30#200
-numCon = 600 # 50 or num recursive
+numCon = 600 # 50
+numRecur = 600 #num recursive
 numDis = 600#600 # 50
 numOut = 104
 # original parameters

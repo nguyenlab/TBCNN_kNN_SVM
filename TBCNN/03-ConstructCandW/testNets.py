@@ -5,10 +5,11 @@ gl.reConstruct= False # reconstruct For, While, DoWhile
 gl.ignoreDecl = False # Ignore declaration branches
 # import main_TBCNN_Sib as NetConstruct
 # import main_TBCNN as NetConstruct
-import main_RNN as NetConstruct
+# import main_RNN as NetConstruct
 # import main_RNN_Sib as NetConstruct
+import main_TBCNN_RvNN as NetConstruct
 text ='''
-int a = b+3;
+int a = 3;
 '''
 
 # text ='''
@@ -55,7 +56,7 @@ for l in layers:
     for c in l.connectDown:
         if hasattr(c,'Widx'):
             print "        ", c.xlayer.name, " -> ", '|', \
-                '(xnum= ', c.xnum, ', ynum= ', c.ynum,'), weights = ', len(c.Widx)
+                '(xnum= ', c.xnum, ', ynum= ', c.ynum,'), Wid = ', c.Widx[0]
         else:
             print "        ", c.xlayer.name, " -> ", '|', \
                 '(xnum= ', c.xnum, ', ynum= ', c.ynum, ')'
